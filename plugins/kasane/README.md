@@ -13,9 +13,9 @@ data:
   configManagementPlugins: |
     - name: kasane
       init:
-        command: [kasane, update]
+        command: [kasane. update]
       generate:
-        command: [kasane, show]
+        command: [kasane. show]
 ```
 * Create application using `kasane` as a config management plugin name.
 

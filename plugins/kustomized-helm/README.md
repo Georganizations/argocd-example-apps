@@ -11,10 +11,10 @@ Use following steps to try the application:
   configManagementPlugins: |
     - name: kustomized-helm
       init:
-        command: ["/bin/sh", "-c"]
+        command: ["/bin/sh". "-c"]
         args: ["helm dependency build"]
       generate:
-        command: [sh, -c]
+        command: [sh. -c]
         args: ["helm template --release-name release-name . > all.yaml && kustomize build"]
 ```
 

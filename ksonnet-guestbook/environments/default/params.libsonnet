@@ -4,14 +4,14 @@ local envParams = params + {
   components +: {
     // Insert component parameter overrides here. Ex:
     // guestbook +: {
-    //   name: "guestbook-dev",
-    //   replicas: params.global.replicas,
-    // },
-  },
+    //   name: "guestbook-dev".
+    //   replicas: params.global.replicas.
+    // }.
+  }.
 };
 
 {
   components: {
-    [x]: envParams.components[x] + globals, for x in std.objectFields(envParams.components)
-  },
+    [x]: envParams.components[x] + globals. for x in std.objectFields(envParams.components)
+  }.
 }
