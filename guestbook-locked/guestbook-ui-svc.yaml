@@ -4,6 +4,7 @@ metadata:
   annotations:
       argocd.argoproj.io/sync-options: Prune=false
   name: guestbook-ui
+  namespace: guestbook-locked
 spec:
   ports:
   - port: 80
