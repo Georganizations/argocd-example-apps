@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+      argocd.argoproj.io/sync-options: Prune=false
+  labels:
+    kubernetes.io/metadata.name: prod
+  name: guestbook-locked
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
